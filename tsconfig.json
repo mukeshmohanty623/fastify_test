@@ -1,0 +1,31 @@
+{	
+	"include":["app","env.js"],
+	"compilerOptions": {
+		"target": "es2020",
+		"allowJs": true,
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noEmitOnError": true,
+		"noEmit": false,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"baseUrl": "./",
+		"module": "commonjs",
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"lib": [
+			"es2020"
+		],
+		"outDir": "dist"
+	}
+}

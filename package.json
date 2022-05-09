@@ -1,0 +1,27 @@
+{
+  "name": "samplefastifytestcases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap --ts",
+    "clean": "rm -rf dist/",
+    "build": "yarn clean && tsc -p ./tsconfig.json && cross-env APP=dev node dist/app/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/postgres": "^4.0.0",
+    "fastify": "~3.29.0",
+    "fastify-plugin": "^3.0.1",
+    "pg": "^8.7.3",
+    "ts-node": "^10.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/tap": "^15.0.7",
+    "cross-env": "^7.0.3",
+    "tap": "^16.2.0",
+    "typescript": "^4.6.4"
+  }
+}
